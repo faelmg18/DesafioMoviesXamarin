@@ -100,7 +100,11 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "MyMovies.dll" comes first in this list. */
 		"MyMovies.dll",
 		"Newtonsoft.Json.dll",
+		"UniversalImageLoader.dll",
+		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"Xamarin.Android.Support.v7.RecyclerView.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

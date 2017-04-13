@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content;
 using MyMovies.Libary;
 using System.Threading.Tasks;
+using Android.Support.V4.Content;
 
 namespace MyMovies.Utils
 {
@@ -73,7 +74,7 @@ namespace MyMovies.Utils
 
             }
         }
-        //public static Android.Graphics.Color GetGraphicsColorApp(this Activity activity, int color) =>
-        // new Android.Graphics.Color(ContextCompat.GetColor(activity, color));
+        public static Android.Graphics.Color GetGraphicsColorApp(this Activity activity, int color) =>
+         new Android.Graphics.Color(ContextCompat.GetColor(activity, color));
     }
 }

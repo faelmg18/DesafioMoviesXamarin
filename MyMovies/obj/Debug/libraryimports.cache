@@ -2,5 +2,7 @@
 <Paths>
   <ManifestDocuments />
   <NativeLibraries />
-  <Jars />
+  <Jars>
+    <Jar>obj\Debug\__library_projects__\UniversalImageLoader\library_project_imports\UniversalImageLoader.jar</Jar>
+  </Jars>
 </Paths>

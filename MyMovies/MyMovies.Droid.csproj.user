@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Motorola Moto G Play</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86</DefaultDevice>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

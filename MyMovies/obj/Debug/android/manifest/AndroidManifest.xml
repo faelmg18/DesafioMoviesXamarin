@@ -6,7 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="MyMovies" android:name="md58bb3c09f53bb0b151adfff90d41f94e8.ApplicationContext" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="MyMovies" android:name="md58bb3c09f53bb0b151adfff90d41f94e8.MainActivity">
+    <activity android:icon="@drawable/icon" android:label="MyMovies" android:theme="@style/AppTheme" android:name="md58bb3c09f53bb0b151adfff90d41f94e8.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
