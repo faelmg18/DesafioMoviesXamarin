@@ -1,4 +1,6 @@
-﻿namespace MoviesApi.Libary.Model.Fundation
+﻿using SQLite;
+
+namespace MoviesApi.Libary.Model.Fundation
 {
     public class Movie : EntitiePersistable
     {
@@ -7,6 +9,8 @@
         public string Rated { get; set; }
         public string Released { get; set; }
         public string Runtime { get; set; }
+
+        [Ignore]
         public string genre { get; set; }
 
         public string Genre
