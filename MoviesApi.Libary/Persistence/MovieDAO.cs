@@ -41,6 +41,7 @@ namespace MoviesApi.Libary.Persistence
         public List<Movie> RetrieveAll()
         {
             var movies = FindAll();
+            movies = movies.OrderBy(o => o.genre).ToList();
             return movies;
         }
 
