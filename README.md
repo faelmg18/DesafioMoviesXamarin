@@ -129,8 +129,6 @@ OmdbApiMovies omdbApi = OmdbApiMovies(Activity);
 ![ezgif com-video-to-gif 2](https://cloud.githubusercontent.com/assets/8068428/24764385/91cb94a4-1aca-11e7-9519-4b6d9580854d.gif)
 ## Contribuições
 
-* **Jackson Core databind** - [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.0.1)
-* **Jackson Core annotations** - [jackson-annotations](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations/2.2.1)
 * **Universal Image Loader** -  [Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 ## Autor
