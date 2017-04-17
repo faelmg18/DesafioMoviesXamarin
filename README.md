@@ -29,20 +29,27 @@ Para buscar os filmes já salvos no dispositivo, o método retrieveAllGroupBy() 
 ```
 Exemplos
   
-   MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
-   LinkedHashMap<String, ArrayList<Movie>> hasMapMovies = movieRepository.retrieveAllGroupBy();
+   MovieRepository _movieRepository = Activity.Resolve<MovieRepository>();
+   LinkedHashMap<String, ArrayList<Movie>> _hasMapMovies = _movieRepository.RetrieveAllGroupBy();
    
    ### Colocando em um Adapter
-   CategorizedMoviesAdapter mAdapter = new CategorizedMoviesAdapter(getActivity())
    
-   for (String key : hasMapMovies.keySet()) {
-            mAdapter.addMovies(new CategorizedMovies(hasMapMovies.get(key), key));
-        }
+    List<CategorizedMovies> categorizedMovies = new List<CategorizedMovies>();
+           
+           foreach (var key in _hasMapMovies.D.Keys)
+            {
+
+                categorizedMovies.Add(new CategorizedMovies(_hasMapMovies[key], key));
+            }
+            return categorizedMovies;
         
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
+     RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(Activity);
+     _recyclerView.SetLayoutManager(mLayoutManager);
+
+     RecyclerView.Adapter adapter = new CategorizedMoviesAdapter(Activity, moviesCategorized);
+      _recyclerView.HasFixedSize = true;
+      _recyclerView.SetItemAnimator(new DefaultItemAnimator());
+      _recyclerView.SetAdapter(mAdapter);
    
   
 ```
@@ -64,24 +71,24 @@ logo após o evento ser acionado, é chamado o método  movieRepository.delete(m
 
 
 ```
-MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
+ MovieRepository movieRepository = Activity.Resolve<MovieRepository>();
 
-   if(movie != null){
-                    DialogBuilder.showDialogPositiveNegative(MovieDetail.this, getString(R.string.stringEmpty), getString(R.string.remove_movie), new DialogBuilder.ButtonCallback() {
-                        @Override
-                        protected void onPositive(AlertDialog.Builder builder, DialogInterface dialogInterface) {
-                            movieRepository.delete(movie);
-                            setResult(RESULT_OK);
-                            finish();
-                            Toast.makeText(MovieDetail.this, R.string.deleted_movie_successfully,Toast.LENGTH_LONG).show();
-                        }
-
-                        @Override
-                        protected void onNegative(AlertDialog.Builder builder, DialogInterface dialogInterface) {
-                            dialogInterface.dismiss();
-                        }
-                    });
+fab.Click += delegate
+            {
+                if (movie != null)
+                {
+                    this.ShowInformation(GetString(Resource.String.remove_movie), null, () =>
+                    {
+                        movieRepository.Delete(movie);
+                        SetResult(Result.Ok);
+                        Finish();
+                        Toast.MakeText(this, Resource.String.deleted_movie_successfully, ToastLength.Long).Show();
+                    }, (dialog) =>
+                     {
+                         dialog.Dismiss();
+                     }, GetString(Resource.String.ok), GetString(Resource.String.cancel));
                 }
+            };
 ```
 
 ![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24725376/161b1316-1a25-11e7-9221-e3e9b5079785.gif)
@@ -92,8 +99,8 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
 É possível buscar um filme no celular mesmo que não tenha internet, mas o filme já deve estar salvo nos meus filmes.
 
 ```
- MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
- List<Movie> movies = movieRepository.retrieveAllByName(movieTitle);
+MovieRepository movieRepository = Activity.Resolve<MovieRepository>();
+List<Movie> movies = movieRepository.RetrieveAllByName(movieTitle);
 
 ```
 
@@ -111,19 +118,13 @@ http://www.omdbapi.com/?t=ice
 ```
 ```
 Exemplo da chamada através da api criada
-OmdbApi omdbApi = new OmdbApi(getActivity());
+OmdbApiMovies omdbApi = OmdbApiMovies(Activity);
 
- omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
-                    @Override
-                    public void onFindMovie(Movie movie) {
-                        loadMovieToViewScreen((movie));
-                    }
-
-                    @Override
-                    public void onError(Exception e) {
-                        DialogBuilder.showErrorServerInformation(getContext());
-                    }
-                });
+ omdbApi.FindMovie(movieTitle, (movie) =>
+                    {
+                        movieToSave = movie;
+                        LoadMovieToViewScreen(movie);
+                    });
 ```
 ![ezgif com-video-to-gif 2](https://cloud.githubusercontent.com/assets/8068428/24764385/91cb94a4-1aca-11e7-9519-4b6d9580854d.gif)
 ## Contribuições
