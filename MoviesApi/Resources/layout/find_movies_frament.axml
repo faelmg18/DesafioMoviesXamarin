@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <MoviesApi.UI.Components.SearchEditext
+          android:id="@+id/edit_text_serach_movie"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionSearch"
+          android:drawableRight="@drawable/ic_magnify"
+          android:hint="@string/movie_name_hint" />
+
+    </android.support.design.widget.TextInputLayout>
+  </LinearLayout>
+
+  <MoviesApi.UI.Components.SimpleViewAnimator
+      android:id="@+id/animated_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <LinearLayout
+              android:id="@+id/viewA"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:transitionName="photoAlbum" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_title_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="23sp"
+                android:transitionName="titleMovie" />
+
+            <TextView
+                android:id="@+id/text_view_actors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/text_view_plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18sp" />
+
+          </LinearLayout>
+
+
+        </LinearLayout>
+      </ScrollView>
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:clickable="true"
+          android:src="@drawable/ic_rate_white"
+          app:backgroundTint="@color/colorPrimaryDark"
+          app:backgroundTintMode="src_in"
+          app:elevation="6dp"
+          app:layout_anchor="@id/viewA"
+          app:layout_anchorGravity="bottom|right|end" />
+    </android.support.design.widget.CoordinatorLayout>
+
+  </MoviesApi.UI.Components.SimpleViewAnimator>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#085b7a</color>
+    <color name="colorPrimaryDark">#013750</color>
+    <color name="colorAccent">#a4c139</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="white">#fff</color>
+    <color name="text_model_name_color">#494949</color>
+    <color name="dialog_background_color">@color/white</color>
+    <color name="dialog_button_text_color">#2196f3</color>
+    <color name="dialog_content_color">#626262</color>
+    <color name="selected">#e5e5e5</color>
+  <color name="dialog_content_color">#626262</color>
+</resources>

@@ -1,0 +1,7 @@
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\bin\Debug\MoviesApi.Libary.dll
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\bin\Debug\MoviesApi.Libary.pdb
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\obj\Debug\MoviesApi.Libary.csprojResolveAssemblyReference.cache
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\obj\Debug\MoviesApi.Libary.dll
+C:\Users\rafae\Documents\Visual Studio 2015\Projects\MoviesApi\MoviesApi.Libary\obj\Debug\MoviesApi.Libary.pdb

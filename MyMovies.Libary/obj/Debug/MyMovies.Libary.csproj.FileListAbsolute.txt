@@ -1,6 +1,0 @@
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\bin\Debug\MyMovies.Libary.dll
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\bin\Debug\MyMovies.Libary.pdb
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\bin\Debug\Newtonsoft.Json.dll
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\bin\Debug\Newtonsoft.Json.xml
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\obj\Debug\MyMovies.Libary.dll
-C:\Users\rafae\Documents\Visual Studio 2015\Projects\MyMovies\MyMovies.Libary\obj\Debug\MyMovies.Libary.pdb
