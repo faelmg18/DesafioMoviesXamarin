@@ -1,7 +1,7 @@
 
 
-# ZupDesafioMovies
-Projeto criado para participar do processo seletivo Zup
+# MyMovies Desafio
+Projeto criado para participar do processo seletivo Zup repassado para Xamarin para o processo seletivo Accenture 
 ## Omdb
 A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por seus usuários, você pode ver mais em
 [OmbdApi](http://www.omdbapi.com/) - The Open Movie Database.
