@@ -70,7 +70,7 @@ Para deletar o filme é necessário clicar no botão com uma lixeira no lado dir
 logo após o evento ser acionado, é chamado o método  movieRepository.delete(movie) passando como parâmetro o filme a ser deletado;
 
 
-```
+```c#
  MovieRepository movieRepository = Activity.Resolve<MovieRepository>();
 
 fab.Click += delegate
@@ -98,7 +98,7 @@ fab.Click += delegate
 
 É possível buscar um filme no celular mesmo que não tenha internet, mas o filme já deve estar salvo nos meus filmes.
 
-```
+```c#
 MovieRepository movieRepository = Activity.Resolve<MovieRepository>();
 List<Movie> movies = movieRepository.RetrieveAllByName(movieTitle);
 
@@ -116,7 +116,7 @@ Exemplo da chamada OmdbApi
 http://www.omdbapi.com/?t=ice
 
 ```
-```
+```c#
 Exemplo da chamada através da api criada
 OmdbApiMovies omdbApi = OmdbApiMovies(Activity);
 
