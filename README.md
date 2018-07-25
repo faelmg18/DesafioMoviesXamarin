@@ -26,7 +26,7 @@ Android SKD 21, 5.0 ou superior
 ## Buscando todos os filmes salvos no dispositivos
 Para buscar os filmes já salvos no dispositivo, o método retrieveAllGroupBy() da classe MovieDAO deve ser chamado, sendo assim irá retornar todos os filmes separados por categoria dos filmes.
 
-```
+```c#
 Exemplos
   
    MovieRepository _movieRepository = Activity.Resolve<MovieRepository>();
